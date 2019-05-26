@@ -1,0 +1,9 @@
+ <ul class="list-group">
+      <h2>Liste des postes</h2>
+      <app-blog-list-item *ngFor="let blog of blogs"
+                          [titre]="blog.titre"
+                          [contenu]="blog.contenu"
+                          [dateCreation]="blog.dateCreation"
+                          [loveIts]="blog.loveIts">
+      </app-blog-list-item>
+ </ul>
